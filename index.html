@@ -7,18 +7,20 @@
 </head>
 <body>
     <h1 style="text-align: center;">Pyramid or Triangle</h1>
-    <h2>Welcome to the website !! You have to enter a Number to find the expected figure ! ENJOY !</h2>
+    <h2>Welcome to the website !! You have to choose a figure type and a Number to find the expected figure ! ENJOY !</h2>
     
     <!--DropDown figure type-->
-    <label for="figure">Choose a figure:</label>
+    <label for="figure">Choose a figure: </label>
     <select name="figure" id="figureType">
       <option value="triangle">Triangle</option>
       <option value="reverseTriangle">Reverse Triangle</option>
     </select> 
+    <br>
+    <br>
 
     <!--NumberLine validate-->
-    <p>Entrer un nombre supérieur à 0</p>
-    <input id="numLinesInput" type="number" min="0" placeholder=" Entrer un nombre">
+    <label>Enter a Number: </label>
+    <input id="numLinesInput" type="number" min="0" placeholder=" Enter a Number">
     <button id="validateButton" type="button">Valider</button>
 
     <!-- Inclusion de la zone html qui contiendra le triangle -->
