@@ -12,9 +12,13 @@ document.getElementById("validateButton").addEventListener("click", function() {
   // Import user number
   const userNumLines = document.getElementById("numLinesInput").value; 
 
-  // Dessiner le triangle
-  const triangle = drawTriangle(userNumLines);
-      
-  // Afficher le triangle dans l'élément HTML
-  document.getElementById("triangleZone").innerText = triangle;
+  if (userNumLines >= 0){  
+    // Definir le triangle
+    const triangle = drawTriangle(userNumLines);
+
+    // Afficher le triangle dans l'élément HTML
+    document.getElementById("triangleZone").innerText = triangle;
+  }else{
+    alert("Please enter a number >= 0 ")
+  }
 });
