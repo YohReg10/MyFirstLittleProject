@@ -7,6 +7,15 @@ function drawTriangle(numLines){
   return strTriangle;
 }
 
+function drawReverseTriangle(numLines){
+  let strTriangle = "";
+  let SYMBOLE = "*";
+  for (let i = numLines; i >= 0; i--) {
+    strTriangle += SYMBOLE.repeat(i) + "\n";
+  }
+  return strTriangle;
+}
+
 // Événement click pour le bouton
 document.getElementById("validateButton").addEventListener("click", function() {  
   // Import user number
@@ -22,3 +31,4 @@ document.getElementById("validateButton").addEventListener("click", function() {
     alert("Please enter a number >= 0 ")
   }
 });
+
