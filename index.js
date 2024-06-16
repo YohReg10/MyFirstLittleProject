@@ -9,8 +9,11 @@ function drawTriangle(numLines){
 
 // Événement click pour le bouton
 document.getElementById("validateButton").addEventListener("click", function() {  
+  // Import user number
+  const userNumLines = document.getElementById("numLinesInput").value; 
+
   // Dessiner le triangle
-  const triangle = drawTriangle(3);
+  const triangle = drawTriangle(userNumLines);
       
   // Afficher le triangle dans l'élément HTML
   document.getElementById("triangleZone").innerText = triangle;
