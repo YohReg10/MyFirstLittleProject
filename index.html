@@ -10,20 +10,13 @@
     <p>Welcome to the website !! You have to enter a Number to find the expected figure ! ENJOY !</p>
     <h2>Entrer un nombre supérieur à 0</h2>
     <input type="number" min="0" placeholder=" Entrer un nombre">
-    <button type="button">Validate</button>
+    <button id="validateButton" type="button">Valider</button>
 
-    <!-- Inclusion de la zone html qui contiendr le triangle -->
-    <p id="triangle"></p>
+    <!-- Inclusion de la zone html qui contiendra le triangle -->
+    <p id="triangleZone"></p>
 
     <!-- Inclusion du fichier JavaScript -->
     <script src="index.js"></script>
 
-    <!-- Appel de la fonction -->
-    <script>
-        window.onload = function() {
-            // Affichage du résultat dans l'élément HTML
-            document.getElementById("triangle").innerText = drawTriangle(3);
-        };
-    </script>
 </body>
 </html>
